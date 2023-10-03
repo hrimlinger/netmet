@@ -7,7 +7,6 @@ __pycache__/
 *.so
 
 TP2/preparation/
-TP2/main_correction.py
 
 
 # Distribution / packaging
