@@ -1,167 +1,59 @@
 [
     {
-        "address_v4": "193.29.220.38",
-        "address_v6": null,
-        "asn_v4": 29067,
-        "asn_v6": null,
-        "country_code": "UA",
-        "description": "Hostmaster.UA",
-        "first_connected": 1312356499,
+        "address_v4": "76.82.152.84",
+        "address_v6": "2603:8001:5000:2aa0:220:4aff:fec8:25ed",
+        "asn_v4": 20001,
+        "asn_v6": 20001,
+        "country_code": "US",
+        "description": "JBP-SD",
+        "first_connected": 1289867916,
         "geometry": {
             "type": "Point",
             "coordinates": [
-                30.4585,
-                50.4205
+                -117.1815,
+                32.8885
             ]
         },
-        "id": 126,
+        "id": 32,
         "is_anchor": false,
         "is_public": true,
-        "last_connected": 1696319858,
-        "prefix_v4": "193.29.220.0\/24",
-        "prefix_v6": null,
+        "last_connected": 1695736391,
+        "prefix_v4": "76.80.0.0\/14",
+        "prefix_v6": "2603:8000::\/28",
         "status": {
             "id": 1,
             "name": "Connected",
-            "since": "2023-09-17T12:02:19Z"
+            "since": "2023-09-16T07:19:04Z"
         },
-        "status_since": 1694952139,
+        "status_since": 1694848744,
         "tags": [
             {
-                "name": "Office",
-                "slug": "office"
+                "name": "Cable",
+                "slug": "cable"
             },
             {
-                "name": "No NAT",
-                "slug": "no-nat"
+                "name": "Home",
+                "slug": "home"
             },
-            {
-                "name": "system: V1",
-                "slug": "system-v1"
-            },
-            {
-                "name": "system: Resolves A Correctly",
-                "slug": "system-resolves-a-correctly"
-            },
-            {
-                "name": "system: Resolves AAAA Correctly",
-                "slug": "system-resolves-aaaa-correctly"
-            },
-            {
-                "name": "system: IPv4 Works",
-                "slug": "system-ipv4-works"
-            },
-            {
-                "name": "system: IPv4 Capable",
-                "slug": "system-ipv4-capable"
-            },
-            {
-                "name": "system: IPv4 Stable 30d",
-                "slug": "system-ipv4-stable-30d"
-            },
-            {
-                "name": "system: IPv4 Stable 1d",
-                "slug": "system-ipv4-stable-1d"
-            }
-        ],
-        "total_uptime": 382165426,
-        "type": "Probe"
-    },
-    {
-        "address_v4": "31.43.111.217",
-        "address_v6": null,
-        "asn_v4": 56433,
-        "asn_v6": null,
-        "country_code": "UA",
-        "description": "LocalNet ISP (Ethernet)",
-        "first_connected": 1295269881,
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                30.4215,
-                50.5015
-            ]
-        },
-        "id": 289,
-        "is_anchor": false,
-        "is_public": true,
-        "last_connected": 1696319858,
-        "prefix_v4": "31.43.96.0\/19",
-        "prefix_v6": null,
-        "status": {
-            "id": 1,
-            "name": "Connected",
-            "since": "2023-09-30T11:43:31Z"
-        },
-        "status_since": 1696074211,
-        "tags": [
             {
                 "name": "NAT",
                 "slug": "nat"
             },
             {
-                "name": "system: V1",
-                "slug": "system-v1"
+                "name": "Native IPv6",
+                "slug": "native-ipv6"
             },
             {
-                "name": "system: IPv4 Capable",
-                "slug": "system-ipv4-capable"
-            },
-            {
-                "name": "system: IPv4 RFC1918",
-                "slug": "system-ipv4-rfc1918"
-            }
-        ],
-        "total_uptime": 383974979,
-        "type": "Probe"
-    },
-    {
-        "address_v4": "95.46.143.253",
-        "address_v6": null,
-        "asn_v4": 56639,
-        "asn_v6": null,
-        "country_code": "UA",
-        "description": "GlobalNet (Solone)",
-        "first_connected": 1321193960,
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                34.8775,
-                48.2095
-            ]
-        },
-        "id": 604,
-        "is_anchor": false,
-        "is_public": true,
-        "last_connected": 1696319858,
-        "prefix_v4": "95.46.143.0\/24",
-        "prefix_v6": null,
-        "status": {
-            "id": 1,
-            "name": "Connected",
-            "since": "2023-10-02T03:19:56Z"
-        },
-        "status_since": 1696216796,
-        "tags": [
-            {
-                "name": "Fibre",
-                "slug": "fibre"
-            },
-            {
-                "name": "NAT",
-                "slug": "nat"
+                "name": "TWC",
+                "slug": "twc"
             },
             {
                 "name": "IPv4",
                 "slug": "ipv4"
             },
             {
-                "name": "Multihomed",
-                "slug": "multihomed"
-            },
-            {
-                "name": "ISP",
-                "slug": "isp"
+                "name": "IPv6",
+                "slug": "ipv6"
             },
             {
                 "name": "system: V1",
@@ -180,44 +72,80 @@
                 "slug": "system-ipv4-works"
             },
             {
+                "name": "system: IPv6 Works",
+                "slug": "system-ipv6-works"
+            },
+            {
+                "name": "iwantbcp38compliancetesting",
+                "slug": "iwantbcp38compliancetesting"
+            },
+            {
                 "name": "system: IPv4 Capable",
                 "slug": "system-ipv4-capable"
             },
             {
+                "name": "system: IPv6 Capable",
+                "slug": "system-ipv6-capable"
+            },
+            {
                 "name": "system: IPv4 RFC1918",
                 "slug": "system-ipv4-rfc1918"
+            },
+            {
+                "name": "Wi-Fi",
+                "slug": "wi-fi"
+            },
+            {
+                "name": "system: IPv6 Stable 30d",
+                "slug": "system-ipv6-stable-30d"
+            },
+            {
+                "name": "system: IPv6 Stable 1d",
+                "slug": "system-ipv6-stable-1d"
+            },
+            {
+                "name": "system: IPv4 Stable 30d",
+                "slug": "system-ipv4-stable-30d"
+            },
+            {
+                "name": "system: IPv4 Stable 90d",
+                "slug": "system-ipv4-stable-90d"
+            },
+            {
+                "name": "system: IPv4 Stable 1d",
+                "slug": "system-ipv4-stable-1d"
             }
         ],
-        "total_uptime": 119820944,
+        "total_uptime": 394894640,
         "type": "Probe"
     },
     {
-        "address_v4": "195.60.174.11",
-        "address_v6": null,
-        "asn_v4": 34814,
-        "asn_v6": null,
-        "country_code": "UA",
-        "description": "y13",
-        "first_connected": 1307345066,
+        "address_v4": "24.22.249.162",
+        "address_v6": "2601:600:9c00:75a0:220:4aff:fec8:20ae",
+        "asn_v4": 7922,
+        "asn_v6": 7922,
+        "country_code": "US",
+        "description": "Gaurab's Home behind  Cox Communications",
+        "first_connected": 1300349249,
         "geometry": {
             "type": "Point",
             "coordinates": [
-                31.2695,
-                51.5405
+                -111.8285,
+                33.2605
             ]
         },
-        "id": 657,
+        "id": 86,
         "is_anchor": false,
         "is_public": true,
-        "last_connected": 1696319858,
-        "prefix_v4": "195.60.174.0\/23",
-        "prefix_v6": null,
+        "last_connected": 1695736391,
+        "prefix_v4": "24.16.0.0\/13",
+        "prefix_v6": "2601::\/20",
         "status": {
             "id": 1,
             "name": "Connected",
-            "since": "2023-10-02T16:12:09Z"
+            "since": "2023-09-24T08:54:37Z"
         },
-        "status_since": 1696263129,
+        "status_since": 1695545677,
         "tags": [
             {
                 "name": "Home",
@@ -244,168 +172,8 @@
                 "slug": "system-ipv4-works"
             },
             {
-                "name": "system: IPv4 Capable",
-                "slug": "system-ipv4-capable"
-            },
-            {
-                "name": "system: IPv4 RFC1918",
-                "slug": "system-ipv4-rfc1918"
-            },
-            {
-                "name": "system: IPv4 Stable 30d",
-                "slug": "system-ipv4-stable-30d"
-            },
-            {
-                "name": "system: IPv4 Stable 1d",
-                "slug": "system-ipv4-stable-1d"
-            }
-        ],
-        "total_uptime": 357693675,
-        "type": "Probe"
-    },
-    {
-        "address_v4": "193.227.230.13",
-        "address_v6": "2001:67c:2bb8:0:220:4aff:fec5:5884",
-        "asn_v4": 35731,
-        "asn_v6": 35731,
-        "country_code": "UA",
-        "description": "NT-Service Ltd. - AS35731",
-        "first_connected": 1307458501,
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                33.1115,
-                48.6675
-            ]
-        },
-        "id": 681,
-        "is_anchor": false,
-        "is_public": true,
-        "last_connected": 1696319858,
-        "prefix_v4": "193.227.230.0\/23",
-        "prefix_v6": "2001:67c:2bb8::\/48",
-        "status": {
-            "id": 1,
-            "name": "Connected",
-            "since": "2023-09-29T10:23:44Z"
-        },
-        "status_since": 1695983024,
-        "tags": [
-            {
-                "name": "No NAT",
-                "slug": "no-nat"
-            },
-            {
-                "name": "system: V1",
-                "slug": "system-v1"
-            },
-            {
-                "name": "system: Resolves A Correctly",
-                "slug": "system-resolves-a-correctly"
-            },
-            {
-                "name": "system: Resolves AAAA Correctly",
-                "slug": "system-resolves-aaaa-correctly"
-            },
-            {
-                "name": "system: IPv4 Works",
-                "slug": "system-ipv4-works"
-            },
-            {
                 "name": "system: IPv6 Works",
                 "slug": "system-ipv6-works"
-            },
-            {
-                "name": "system: IPv4 Capable",
-                "slug": "system-ipv4-capable"
-            },
-            {
-                "name": "system: IPv6 Capable",
-                "slug": "system-ipv6-capable"
-            },
-            {
-                "name": "system: IPv6 Stable 30d",
-                "slug": "system-ipv6-stable-30d"
-            },
-            {
-                "name": "system: IPv6 Stable 1d",
-                "slug": "system-ipv6-stable-1d"
-            },
-            {
-                "name": "system: IPv6 Stable 90d",
-                "slug": "system-ipv6-stable-90d"
-            }
-        ],
-        "total_uptime": 381865598,
-        "type": "Probe"
-    },
-    {
-        "address_v4": "193.178.146.45",
-        "address_v6": "2a02:2278:70eb:79:220:4aff:fec5:58a2",
-        "asn_v4": 28907,
-        "asn_v6": 28907,
-        "country_code": "UA",
-        "description": "polischuk.org",
-        "first_connected": 1307553739,
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                30.5015,
-                50.4385
-            ]
-        },
-        "id": 682,
-        "is_anchor": false,
-        "is_public": true,
-        "last_connected": 1696319858,
-        "prefix_v4": "193.178.146.0\/23",
-        "prefix_v6": "2a02:2278:7000::\/40",
-        "status": {
-            "id": 1,
-            "name": "Connected",
-            "since": "2023-10-01T07:19:54Z"
-        },
-        "status_since": 1696144794,
-        "tags": [
-            {
-                "name": "Datacentre",
-                "slug": "datacentre"
-            },
-            {
-                "name": "IXP",
-                "slug": "ixp"
-            },
-            {
-                "name": "NAT",
-                "slug": "nat"
-            },
-            {
-                "name": "IPv4",
-                "slug": "ipv4"
-            },
-            {
-                "name": "system: V1",
-                "slug": "system-v1"
-            },
-            {
-                "name": "system: Resolves A Correctly",
-                "slug": "system-resolves-a-correctly"
-            },
-            {
-                "name": "system: Resolves AAAA Correctly",
-                "slug": "system-resolves-aaaa-correctly"
-            },
-            {
-                "name": "system: IPv4 Works",
-                "slug": "system-ipv4-works"
-            },
-            {
-                "name": "system: IPv6 Works",
-                "slug": "system-ipv6-works"
-            },
-            {
-                "name": "Known IPv6 issues",
-                "slug": "known-ipv6-issues"
             },
             {
                 "name": "system: IPv4 Capable",
@@ -420,20 +188,12 @@
                 "slug": "system-ipv4-rfc1918"
             },
             {
-                "name": "UA-IX",
-                "slug": "ua-ix"
-            },
-            {
                 "name": "system: IPv6 Stable 30d",
                 "slug": "system-ipv6-stable-30d"
             },
             {
                 "name": "system: IPv6 Stable 1d",
                 "slug": "system-ipv6-stable-1d"
-            },
-            {
-                "name": "system: IPv4 Stable 30d",
-                "slug": "system-ipv4-stable-30d"
             },
             {
                 "name": "system: IPv4 Stable 90d",
@@ -446,46 +206,234 @@
             {
                 "name": "system: IPv4 Stable 1d",
                 "slug": "system-ipv4-stable-1d"
+            },
+            {
+                "name": "system: Firewall problem suspected",
+                "slug": "system-firewall-problem-suspected"
             }
         ],
-        "total_uptime": 345804125,
+        "total_uptime": 340114399,
         "type": "Probe"
     },
     {
-        "address_v4": "62.205.157.197",
-        "address_v6": "2a01:d0:0:23:220:4aff:fec5:589e",
-        "asn_v4": 29632,
-        "asn_v6": 29632,
-        "country_code": "UA",
-        "description": "NetAssist AS29632",
-        "first_connected": 1309789148,
+        "address_v4": "70.95.176.202",
+        "address_v6": "fdf6:d282:189c:ed62:220:4aff:fec8:22e0",
+        "asn_v4": 20001,
+        "asn_v6": null,
+        "country_code": "US",
+        "description": null,
+        "first_connected": 1362022235,
         "geometry": {
             "type": "Point",
             "coordinates": [
-                30.5115,
-                50.4415
+                -117.1615,
+                32.7195
             ]
         },
-        "id": 699,
+        "id": 125,
         "is_anchor": false,
         "is_public": true,
-        "last_connected": 1696319858,
-        "prefix_v4": "62.205.144.0\/20",
-        "prefix_v6": "2a01:d0::\/32",
+        "last_connected": 1695736391,
+        "prefix_v4": "70.95.0.0\/16",
+        "prefix_v6": null,
         "status": {
             "id": 1,
             "name": "Connected",
-            "since": "2023-10-02T00:10:25Z"
+            "since": "2023-09-25T05:46:40Z"
         },
-        "status_since": 1696205425,
+        "status_since": 1695620800,
         "tags": [
             {
-                "name": "Fibre",
-                "slug": "fibre"
+                "name": "Home",
+                "slug": "home"
             },
             {
-                "name": "Datacentre",
-                "slug": "datacentre"
+                "name": "NAT",
+                "slug": "nat"
+            },
+            {
+                "name": "system: V1",
+                "slug": "system-v1"
+            },
+            {
+                "name": "system: Resolves A Correctly",
+                "slug": "system-resolves-a-correctly"
+            },
+            {
+                "name": "system: Resolves AAAA Correctly",
+                "slug": "system-resolves-aaaa-correctly"
+            },
+            {
+                "name": "system: IPv4 Works",
+                "slug": "system-ipv4-works"
+            },
+            {
+                "name": "system: IPv6 Doesn't Work",
+                "slug": "system-ipv6-doesnt-work"
+            },
+            {
+                "name": "system: IPv4 Capable",
+                "slug": "system-ipv4-capable"
+            },
+            {
+                "name": "system: IPv6 Capable",
+                "slug": "system-ipv6-capable"
+            },
+            {
+                "name": "system: IPv6 ULA",
+                "slug": "system-ipv6-ula"
+            },
+            {
+                "name": "system: IPv4 RFC1918",
+                "slug": "system-ipv4-rfc1918"
+            },
+            {
+                "name": "system: IPv4 Stable 30d",
+                "slug": "system-ipv4-stable-30d"
+            },
+            {
+                "name": "system: IPv4 Stable 1d",
+                "slug": "system-ipv4-stable-1d"
+            }
+        ],
+        "total_uptime": 293120403,
+        "type": "Probe"
+    },
+    {
+        "address_v4": "76.154.155.85",
+        "address_v6": "fd7d:3911:795b:dca1:220:4aff:febf:fdd3",
+        "asn_v4": 7922,
+        "asn_v6": null,
+        "country_code": "US",
+        "description": "Comcast in the Denver Metro",
+        "first_connected": 1291550681,
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -105.0825,
+                39.7985
+            ]
+        },
+        "id": 202,
+        "is_anchor": false,
+        "is_public": true,
+        "last_connected": 1695736391,
+        "prefix_v4": "76.128.0.0\/11",
+        "prefix_v6": null,
+        "status": {
+            "id": 1,
+            "name": "Connected",
+            "since": "2023-09-26T08:07:22Z"
+        },
+        "status_since": 1695715642,
+        "tags": [
+            {
+                "name": "Cable",
+                "slug": "cable"
+            },
+            {
+                "name": "Home",
+                "slug": "home"
+            },
+            {
+                "name": "NAT",
+                "slug": "nat"
+            },
+            {
+                "name": "Comcast",
+                "slug": "comcast"
+            },
+            {
+                "name": "system: V1",
+                "slug": "system-v1"
+            },
+            {
+                "name": "system: Resolves A Correctly",
+                "slug": "system-resolves-a-correctly"
+            },
+            {
+                "name": "system: Resolves AAAA Correctly",
+                "slug": "system-resolves-aaaa-correctly"
+            },
+            {
+                "name": "system: IPv4 Works",
+                "slug": "system-ipv4-works"
+            },
+            {
+                "name": "system: IPv4 Capable",
+                "slug": "system-ipv4-capable"
+            },
+            {
+                "name": "system: IPv6 Capable",
+                "slug": "system-ipv6-capable"
+            },
+            {
+                "name": "system: IPv6 ULA",
+                "slug": "system-ipv6-ula"
+            },
+            {
+                "name": "system: IPv4 RFC1918",
+                "slug": "system-ipv4-rfc1918"
+            },
+            {
+                "name": "DOCSIS3",
+                "slug": "docsis3"
+            },
+            {
+                "name": "system: IPv4 Stable 30d",
+                "slug": "system-ipv4-stable-30d"
+            },
+            {
+                "name": "system: IPv4 Stable 90d",
+                "slug": "system-ipv4-stable-90d"
+            }
+        ],
+        "total_uptime": 315178998,
+        "type": "Probe"
+    },
+    {
+        "address_v4": "69.181.217.78",
+        "address_v6": "2601:647:5600:82:220:4aff:fec8:2318",
+        "asn_v4": 7922,
+        "asn_v6": 7922,
+        "country_code": "US",
+        "description": "Comcast at home",
+        "first_connected": 1323356615,
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -121.8925,
+                37.3405
+            ]
+        },
+        "id": 307,
+        "is_anchor": false,
+        "is_public": true,
+        "last_connected": 1695736391,
+        "prefix_v4": "69.180.0.0\/15",
+        "prefix_v6": "2601::\/20",
+        "status": {
+            "id": 1,
+            "name": "Connected",
+            "since": "2023-09-16T09:06:50Z"
+        },
+        "status_since": 1694855210,
+        "tags": [
+            {
+                "name": "Cable",
+                "slug": "cable"
+            },
+            {
+                "name": "Home",
+                "slug": "home"
+            },
+            {
+                "name": "NAT",
+                "slug": "nat"
+            },
+            {
+                "name": "Native IPv6",
+                "slug": "native-ipv6"
             },
             {
                 "name": "dual-stack",
@@ -500,86 +448,6 @@
                 "slug": "ipv6"
             },
             {
-                "name": "Multihomed",
-                "slug": "multihomed"
-            },
-            {
-                "name": "system: V1",
-                "slug": "system-v1"
-            },
-            {
-                "name": "system: Resolves A Correctly",
-                "slug": "system-resolves-a-correctly"
-            },
-            {
-                "name": "system: Resolves AAAA Correctly",
-                "slug": "system-resolves-aaaa-correctly"
-            },
-            {
-                "name": "system: IPv4 Works",
-                "slug": "system-ipv4-works"
-            },
-            {
-                "name": "system: IPv6 Works",
-                "slug": "system-ipv6-works"
-            },
-            {
-                "name": "system: IPv4 Capable",
-                "slug": "system-ipv4-capable"
-            },
-            {
-                "name": "system: IPv6 Capable",
-                "slug": "system-ipv6-capable"
-            },
-            {
-                "name": "system: IPv4 Stable 30d",
-                "slug": "system-ipv4-stable-30d"
-            },
-            {
-                "name": "system: IPv4 Stable 90d",
-                "slug": "system-ipv4-stable-90d"
-            },
-            {
-                "name": "system: IPv4 Stable 1d",
-                "slug": "system-ipv4-stable-1d"
-            }
-        ],
-        "total_uptime": 371166240,
-        "type": "Probe"
-    },
-    {
-        "address_v4": "95.85.255.147",
-        "address_v6": "2a01:d0:f9fd:0:220:4aff:fec7:bf91",
-        "asn_v4": 43708,
-        "asn_v6": 29632,
-        "country_code": "UA",
-        "description": "IPv6 Tunnel 6in4 netassist.ua Ukraina",
-        "first_connected": 1550682717,
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                30.5185,
-                50.4515
-            ]
-        },
-        "id": 1528,
-        "is_anchor": false,
-        "is_public": true,
-        "last_connected": 1696319858,
-        "prefix_v4": "95.85.192.0\/18",
-        "prefix_v6": "2a01:d0:8000::\/33",
-        "status": {
-            "id": 1,
-            "name": "Connected",
-            "since": "2023-10-01T07:23:19Z"
-        },
-        "status_since": 1696144999,
-        "tags": [
-            {
-                "name": "IPv6 Tunnel",
-                "slug": "ipv6-tunnel"
-            },
-            {
                 "name": "system: V1",
                 "slug": "system-v1"
             },
@@ -610,222 +478,54 @@
             {
                 "name": "system: IPv4 RFC1918",
                 "slug": "system-ipv4-rfc1918"
-            },
-            {
-                "name": "IPv6-only",
-                "slug": "ipv6-only"
-            },
-            {
-                "name": "system: IPv6 Stable 30d",
-                "slug": "system-ipv6-stable-30d"
-            },
-            {
-                "name": "system: IPv6 Stable 1d",
-                "slug": "system-ipv6-stable-1d"
-            },
-            {
-                "name": "system: IPv4 Stable 1d",
-                "slug": "system-ipv4-stable-1d"
             }
         ],
-        "total_uptime": 140921150,
+        "total_uptime": 340997567,
         "type": "Probe"
     },
     {
-        "address_v4": "217.12.205.53",
-        "address_v6": null,
-        "asn_v4": 15626,
-        "asn_v6": null,
-        "country_code": "UA",
-        "description": "Kh.UA",
-        "first_connected": 1323425272,
+        "address_v4": "66.74.47.218",
+        "address_v6": "2603:8001:2b02:5080:220:4aff:febf:ff63",
+        "asn_v4": 20001,
+        "asn_v6": 20001,
+        "country_code": "US",
+        "description": "Home Probe",
+        "first_connected": 1359475610,
         "geometry": {
             "type": "Point",
             "coordinates": [
-                36.2205,
-                49.9775
+                -116.5385,
+                33.8575
             ]
         },
-        "id": 2161,
+        "id": 591,
         "is_anchor": false,
         "is_public": true,
-        "last_connected": 1696319858,
-        "prefix_v4": "217.12.204.0\/23",
-        "prefix_v6": null,
+        "last_connected": 1695736391,
+        "prefix_v4": "66.74.0.0\/15",
+        "prefix_v6": "2603:8000::\/28",
         "status": {
             "id": 1,
             "name": "Connected",
-            "since": "2023-10-02T03:24:40Z"
+            "since": "2023-09-21T21:23:00Z"
         },
-        "status_since": 1696217080,
+        "status_since": 1695331380,
         "tags": [
             {
-                "name": "No NAT",
-                "slug": "no-nat"
+                "name": "Cable",
+                "slug": "cable"
             },
             {
-                "name": "system: V2",
-                "slug": "system-v2"
+                "name": "Home",
+                "slug": "home"
             },
-            {
-                "name": "system: Resolves A Correctly",
-                "slug": "system-resolves-a-correctly"
-            },
-            {
-                "name": "system: Resolves AAAA Correctly",
-                "slug": "system-resolves-aaaa-correctly"
-            },
-            {
-                "name": "system: IPv4 Works",
-                "slug": "system-ipv4-works"
-            },
-            {
-                "name": "system: IPv4 Capable",
-                "slug": "system-ipv4-capable"
-            },
-            {
-                "name": "system: IPv4 Stable 30d",
-                "slug": "system-ipv4-stable-30d"
-            },
-            {
-                "name": "system: IPv4 Stable 90d",
-                "slug": "system-ipv4-stable-90d"
-            },
-            {
-                "name": "system: IPv4 Stable 1d",
-                "slug": "system-ipv4-stable-1d"
-            }
-        ],
-        "total_uptime": 357094998,
-        "type": "Probe"
-    },
-    {
-        "address_v4": "91.210.251.226",
-        "address_v6": "2a0c:b447:ffff:100:220:4aff:fee0:21bc",
-        "asn_v4": 48438,
-        "asn_v6": 48438,
-        "country_code": "UA",
-        "description": "Network Core",
-        "first_connected": 1329146110,
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                30.3815,
-                50.4305
-            ]
-        },
-        "id": 2496,
-        "is_anchor": false,
-        "is_public": true,
-        "last_connected": 1696319858,
-        "prefix_v4": "91.210.250.0\/23",
-        "prefix_v6": "2a0c:b440::\/29",
-        "status": {
-            "id": 1,
-            "name": "Connected",
-            "since": "2023-10-02T17:00:07Z"
-        },
-        "status_since": 1696266007,
-        "tags": [
-            {
-                "name": "Core",
-                "slug": "core"
-            },
-            {
-                "name": "No NAT",
-                "slug": "no-nat"
-            },
-            {
-                "name": "IPv4",
-                "slug": "ipv4"
-            },
-            {
-                "name": "ISP",
-                "slug": "isp"
-            },
-            {
-                "name": "system: V2",
-                "slug": "system-v2"
-            },
-            {
-                "name": "system: Resolves A Correctly",
-                "slug": "system-resolves-a-correctly"
-            },
-            {
-                "name": "system: Resolves AAAA Correctly",
-                "slug": "system-resolves-aaaa-correctly"
-            },
-            {
-                "name": "system: IPv4 Works",
-                "slug": "system-ipv4-works"
-            },
-            {
-                "name": "system: IPv6 Works",
-                "slug": "system-ipv6-works"
-            },
-            {
-                "name": "system: IPv4 Capable",
-                "slug": "system-ipv4-capable"
-            },
-            {
-                "name": "system: IPv6 Capable",
-                "slug": "system-ipv6-capable"
-            },
-            {
-                "name": "NOC",
-                "slug": "noc"
-            },
-            {
-                "name": "system: IPv4 Stable 30d",
-                "slug": "system-ipv4-stable-30d"
-            },
-            {
-                "name": "system: IPv4 Stable 90d",
-                "slug": "system-ipv4-stable-90d"
-            },
-            {
-                "name": "system: IPv4 Stable 1d",
-                "slug": "system-ipv4-stable-1d"
-            }
-        ],
-        "total_uptime": 360329497,
-        "type": "Probe"
-    },
-    {
-        "address_v4": "92.244.99.54",
-        "address_v6": "2a00:1688:0:29:220:4aff:fee0:229e",
-        "asn_v4": 34056,
-        "asn_v6": 34056,
-        "country_code": "UA",
-        "description": "KievNet ISP",
-        "first_connected": 1336484876,
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                30.5105,
-                50.4485
-            ]
-        },
-        "id": 2862,
-        "is_anchor": false,
-        "is_public": true,
-        "last_connected": 1696319858,
-        "prefix_v4": "92.244.96.0\/19",
-        "prefix_v6": "2a00:1688::\/48",
-        "status": {
-            "id": 1,
-            "name": "Connected",
-            "since": "2023-10-01T07:27:16Z"
-        },
-        "status_since": 1696145236,
-        "tags": [
             {
                 "name": "NAT",
                 "slug": "nat"
             },
             {
-                "name": "system: V2",
-                "slug": "system-v2"
+                "name": "system: V1",
+                "slug": "system-v1"
             },
             {
                 "name": "system: Resolves A Correctly",
@@ -842,6 +542,10 @@
             {
                 "name": "system: IPv6 Works",
                 "slug": "system-ipv6-works"
+            },
+            {
+                "name": "Native IPv4",
+                "slug": "native-ipv4"
             },
             {
                 "name": "system: IPv4 Capable",
@@ -878,46 +582,62 @@
             {
                 "name": "system: IPv4 Stable 1d",
                 "slug": "system-ipv4-stable-1d"
+            },
+            {
+                "name": "Spectrum",
+                "slug": "spectrum"
             }
         ],
-        "total_uptime": 356437994,
+        "total_uptime": 285913931,
         "type": "Probe"
     },
     {
-        "address_v4": "176.37.75.190",
+        "address_v4": "108.59.96.56",
         "address_v6": null,
-        "asn_v4": 39608,
+        "asn_v4": 40328,
         "asn_v6": null,
-        "country_code": "UA",
-        "description": "thule@Lanet ISP",
-        "first_connected": 1342714245,
+        "country_code": "US",
+        "description": "lanesboro",
+        "first_connected": 1312303509,
         "geometry": {
             "type": "Point",
             "coordinates": [
-                30.4495,
-                50.4605
+                -91.9725,
+                43.7175
             ]
         },
-        "id": 2946,
+        "id": 801,
         "is_anchor": false,
         "is_public": true,
-        "last_connected": 1696319858,
-        "prefix_v4": "176.37.0.0\/16",
+        "last_connected": 1695736391,
+        "prefix_v4": "108.59.96.0\/23",
         "prefix_v6": null,
         "status": {
             "id": 1,
             "name": "Connected",
-            "since": "2023-10-02T03:18:41Z"
+            "since": "2023-09-15T05:15:53Z"
         },
-        "status_since": 1696216721,
+        "status_since": 1694754953,
         "tags": [
+            {
+                "name": "Fibre",
+                "slug": "fibre"
+            },
+            {
+                "name": "Home",
+                "slug": "home"
+            },
             {
                 "name": "NAT",
                 "slug": "nat"
             },
             {
-                "name": "system: V2",
-                "slug": "system-v2"
+                "name": "dual-stack",
+                "slug": "dual-stack"
+            },
+            {
+                "name": "system: V1",
+                "slug": "system-v1"
             },
             {
                 "name": "system: Resolves A Correctly",
@@ -952,180 +672,36 @@
                 "slug": "system-ipv4-stable-1d"
             }
         ],
-        "total_uptime": 196311415,
+        "total_uptime": 375962178,
         "type": "Probe"
     },
     {
-        "address_v4": "78.152.160.4",
-        "address_v6": null,
-        "asn_v4": 8779,
-        "asn_v6": null,
-        "country_code": "UA",
-        "description": "Khmelnitskinfocom",
-        "first_connected": 1338202107,
+        "address_v4": "97.113.164.28",
+        "address_v6": "2601:600:c500:1a51:220:4aff:fec7:b04b",
+        "asn_v4": 209,
+        "asn_v6": 7922,
+        "country_code": "US",
+        "description": "Matt's House",
+        "first_connected": 1324741699,
         "geometry": {
             "type": "Point",
             "coordinates": [
-                26.9805,
-                49.4215
+                -122.5705,
+                47.6615
             ]
         },
-        "id": 2968,
+        "id": 1058,
         "is_anchor": false,
         "is_public": true,
-        "last_connected": 1696319858,
-        "prefix_v4": "78.152.160.0\/19",
-        "prefix_v6": null,
+        "last_connected": 1695736391,
+        "prefix_v4": "97.113.0.0\/16",
+        "prefix_v6": "2601::\/20",
         "status": {
             "id": 1,
             "name": "Connected",
-            "since": "2023-09-09T15:16:16Z"
+            "since": "2023-09-24T23:08:09Z"
         },
-        "status_since": 1694272576,
-        "tags": [
-            {
-                "name": "NAT",
-                "slug": "nat"
-            },
-            {
-                "name": "system: V2",
-                "slug": "system-v2"
-            },
-            {
-                "name": "system: Resolves A Correctly",
-                "slug": "system-resolves-a-correctly"
-            },
-            {
-                "name": "system: Resolves AAAA Correctly",
-                "slug": "system-resolves-aaaa-correctly"
-            },
-            {
-                "name": "system: IPv4 Works",
-                "slug": "system-ipv4-works"
-            },
-            {
-                "name": "system: IPv4 Capable",
-                "slug": "system-ipv4-capable"
-            },
-            {
-                "name": "system: IPv4 RFC1918",
-                "slug": "system-ipv4-rfc1918"
-            },
-            {
-                "name": "system: IPv4 Stable 30d",
-                "slug": "system-ipv4-stable-30d"
-            },
-            {
-                "name": "system: IPv4 Stable 90d",
-                "slug": "system-ipv4-stable-90d"
-            },
-            {
-                "name": "system: IPv4 Stable 1d",
-                "slug": "system-ipv4-stable-1d"
-            }
-        ],
-        "total_uptime": 355682832,
-        "type": "Probe"
-    },
-    {
-        "address_v4": "195.78.38.166",
-        "address_v6": null,
-        "asn_v4": 28773,
-        "asn_v6": null,
-        "country_code": "UA",
-        "description": "Global Technology of Ukraine",
-        "first_connected": 1341212853,
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                26.9905,
-                49.4175
-            ]
-        },
-        "id": 2970,
-        "is_anchor": false,
-        "is_public": true,
-        "last_connected": 1696319858,
-        "prefix_v4": "195.78.38.0\/23",
-        "prefix_v6": null,
-        "status": {
-            "id": 1,
-            "name": "Connected",
-            "since": "2023-09-28T23:31:15Z"
-        },
-        "status_since": 1695943875,
-        "tags": [
-            {
-                "name": "No NAT",
-                "slug": "no-nat"
-            },
-            {
-                "name": "system: V2",
-                "slug": "system-v2"
-            },
-            {
-                "name": "system: Resolves A Correctly",
-                "slug": "system-resolves-a-correctly"
-            },
-            {
-                "name": "system: Resolves AAAA Correctly",
-                "slug": "system-resolves-aaaa-correctly"
-            },
-            {
-                "name": "system: IPv4 Works",
-                "slug": "system-ipv4-works"
-            },
-            {
-                "name": "system: IPv4 Capable",
-                "slug": "system-ipv4-capable"
-            },
-            {
-                "name": "system: IPv4 RFC1918",
-                "slug": "system-ipv4-rfc1918"
-            },
-            {
-                "name": "system: IPv4 Stable 30d",
-                "slug": "system-ipv4-stable-30d"
-            },
-            {
-                "name": "system: IPv4 Stable 90d",
-                "slug": "system-ipv4-stable-90d"
-            },
-            {
-                "name": "system: IPv4 Stable 1d",
-                "slug": "system-ipv4-stable-1d"
-            }
-        ],
-        "total_uptime": 318385254,
-        "type": "Probe"
-    },
-    {
-        "address_v4": "176.105.199.182",
-        "address_v6": null,
-        "asn_v4": 24812,
-        "asn_v6": null,
-        "country_code": "UA",
-        "description": "SZ_HOME",
-        "first_connected": 1354381881,
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                28.2105,
-                49.1995
-            ]
-        },
-        "id": 3775,
-        "is_anchor": false,
-        "is_public": true,
-        "last_connected": 1696319858,
-        "prefix_v4": "176.105.199.0\/24",
-        "prefix_v6": null,
-        "status": {
-            "id": 1,
-            "name": "Connected",
-            "since": "2023-10-03T06:33:53Z"
-        },
-        "status_since": 1696314833,
+        "status_since": 1695596889,
         "tags": [
             {
                 "name": "Home",
@@ -1136,32 +712,44 @@
                 "slug": "nat"
             },
             {
-                "name": "IPv4",
-                "slug": "ipv4"
+                "name": "system: V1",
+                "slug": "system-v1"
             },
             {
-                "name": "system: V2",
-                "slug": "system-v2"
+                "name": "system: Resolves A Correctly",
+                "slug": "system-resolves-a-correctly"
             },
             {
-                "name": "system: Resolver Mangles Case",
-                "slug": "system-resolver-mangles-case"
+                "name": "system: Resolves AAAA Correctly",
+                "slug": "system-resolves-aaaa-correctly"
             },
             {
                 "name": "system: IPv4 Works",
                 "slug": "system-ipv4-works"
             },
             {
-                "name": "GPON",
-                "slug": "gpon"
+                "name": "system: IPv6 Works",
+                "slug": "system-ipv6-works"
             },
             {
                 "name": "system: IPv4 Capable",
                 "slug": "system-ipv4-capable"
             },
             {
+                "name": "system: IPv6 Capable",
+                "slug": "system-ipv6-capable"
+            },
+            {
                 "name": "system: IPv4 RFC1918",
                 "slug": "system-ipv4-rfc1918"
+            },
+            {
+                "name": "system: IPv6 Stable 30d",
+                "slug": "system-ipv6-stable-30d"
+            },
+            {
+                "name": "system: IPv6 Stable 1d",
+                "slug": "system-ipv6-stable-1d"
             },
             {
                 "name": "system: IPv4 Stable 30d",
@@ -1176,44 +764,68 @@
                 "slug": "system-ipv4-stable-1d"
             }
         ],
-        "total_uptime": 160658523,
+        "total_uptime": 353595929,
         "type": "Probe"
     },
     {
-        "address_v4": "176.98.68.54",
-        "address_v6": null,
-        "asn_v4": 41096,
-        "asn_v6": null,
-        "country_code": "UA",
-        "description": null,
-        "first_connected": 1357828173,
+        "address_v4": "199.212.124.181",
+        "address_v6": "2620:ee:8000:103:220:4aff:fec7:b06b",
+        "asn_v4": 16881,
+        "asn_v6": 16881,
+        "country_code": "US",
+        "description": "DCP Technologies",
+        "first_connected": 1315354113,
         "geometry": {
             "type": "Point",
             "coordinates": [
-                30.2095,
-                48.7695
+                -77.1225,
+                38.8185
             ]
         },
-        "id": 3944,
+        "id": 1113,
         "is_anchor": false,
         "is_public": true,
-        "last_connected": 1696319858,
-        "prefix_v4": "176.98.68.0\/24",
-        "prefix_v6": null,
+        "last_connected": 1695736391,
+        "prefix_v4": "199.212.124.0\/24",
+        "prefix_v6": "2620:ee:8000::\/48",
         "status": {
             "id": 1,
             "name": "Connected",
-            "since": "2023-10-02T03:20:39Z"
+            "since": "2023-09-24T15:57:52Z"
         },
-        "status_since": 1696216839,
+        "status_since": 1695571072,
         "tags": [
+            {
+                "name": "Fibre",
+                "slug": "fibre"
+            },
+            {
+                "name": "Office",
+                "slug": "office"
+            },
             {
                 "name": "No NAT",
                 "slug": "no-nat"
             },
             {
-                "name": "system: V2",
-                "slug": "system-v2"
+                "name": "Native IPv6",
+                "slug": "native-ipv6"
+            },
+            {
+                "name": "dual-stack",
+                "slug": "dual-stack"
+            },
+            {
+                "name": "IPv4",
+                "slug": "ipv4"
+            },
+            {
+                "name": "IPv6",
+                "slug": "ipv6"
+            },
+            {
+                "name": "system: V1",
+                "slug": "system-v1"
             },
             {
                 "name": "system: Resolves A Correctly",
@@ -1228,8 +840,28 @@
                 "slug": "system-ipv4-works"
             },
             {
+                "name": "system: IPv6 Works",
+                "slug": "system-ipv6-works"
+            },
+            {
+                "name": "Native IPv4",
+                "slug": "native-ipv4"
+            },
+            {
                 "name": "system: IPv4 Capable",
                 "slug": "system-ipv4-capable"
+            },
+            {
+                "name": "system: IPv6 Capable",
+                "slug": "system-ipv6-capable"
+            },
+            {
+                "name": "system: IPv6 Stable 30d",
+                "slug": "system-ipv6-stable-30d"
+            },
+            {
+                "name": "system: IPv6 Stable 1d",
+                "slug": "system-ipv6-stable-1d"
             },
             {
                 "name": "system: IPv4 Stable 30d",
@@ -1238,174 +870,38 @@
             {
                 "name": "system: IPv4 Stable 90d",
                 "slug": "system-ipv4-stable-90d"
-            },
-            {
-                "name": "system: IPv4 Stable 1d",
-                "slug": "system-ipv4-stable-1d"
             }
         ],
-        "total_uptime": 337393728,
+        "total_uptime": 364444568,
         "type": "Probe"
     },
     {
-        "address_v4": "109.201.229.173",
+        "address_v4": "99.8.176.147",
         "address_v6": null,
-        "asn_v4": 25229,
+        "asn_v4": 7018,
         "asn_v6": null,
-        "country_code": "UA",
-        "description": "",
-        "first_connected": 1353914620,
+        "country_code": "US",
+        "description": "AT&T Fiber Residential",
+        "first_connected": 1321800586,
         "geometry": {
             "type": "Point",
             "coordinates": [
-                34.8305,
-                50.9185
+                -96.7315,
+                32.9775
             ]
         },
-        "id": 3963,
+        "id": 1121,
         "is_anchor": false,
         "is_public": true,
-        "last_connected": 1696319858,
-        "prefix_v4": "109.201.228.0\/22",
+        "last_connected": 1695736391,
+        "prefix_v4": "99.8.0.0\/15",
         "prefix_v6": null,
         "status": {
             "id": 1,
             "name": "Connected",
-            "since": "2023-09-03T19:19:26Z"
+            "since": "2023-09-20T20:05:08Z"
         },
-        "status_since": 1693768766,
-        "tags": [
-            {
-                "name": "NAT",
-                "slug": "nat"
-            },
-            {
-                "name": "system: V2",
-                "slug": "system-v2"
-            },
-            {
-                "name": "system: Resolves A Correctly",
-                "slug": "system-resolves-a-correctly"
-            },
-            {
-                "name": "system: Resolves AAAA Correctly",
-                "slug": "system-resolves-aaaa-correctly"
-            },
-            {
-                "name": "system: IPv4 Works",
-                "slug": "system-ipv4-works"
-            },
-            {
-                "name": "system: IPv4 Capable",
-                "slug": "system-ipv4-capable"
-            },
-            {
-                "name": "system: IPv4 RFC1918",
-                "slug": "system-ipv4-rfc1918"
-            },
-            {
-                "name": "system: IPv4 Stable 30d",
-                "slug": "system-ipv4-stable-30d"
-            },
-            {
-                "name": "system: IPv4 Stable 90d",
-                "slug": "system-ipv4-stable-90d"
-            },
-            {
-                "name": "system: IPv4 Stable 1d",
-                "slug": "system-ipv4-stable-1d"
-            }
-        ],
-        "total_uptime": 326676265,
-        "type": "Probe"
-    },
-    {
-        "address_v4": "37.57.31.232",
-        "address_v6": null,
-        "asn_v4": 13188,
-        "asn_v6": null,
-        "country_code": "UA",
-        "description": "",
-        "first_connected": 1353946478,
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                36.2205,
-                50.0405
-            ]
-        },
-        "id": 3977,
-        "is_anchor": false,
-        "is_public": true,
-        "last_connected": 1696319858,
-        "prefix_v4": "37.57.31.0\/24",
-        "prefix_v6": null,
-        "status": {
-            "id": 1,
-            "name": "Connected",
-            "since": "2023-09-28T15:49:57Z"
-        },
-        "status_since": 1695916197,
-        "tags": [
-            {
-                "name": "NAT",
-                "slug": "nat"
-            },
-            {
-                "name": "system: V2",
-                "slug": "system-v2"
-            },
-            {
-                "name": "system: Resolver Mangles Case",
-                "slug": "system-resolver-mangles-case"
-            },
-            {
-                "name": "system: IPv4 Works",
-                "slug": "system-ipv4-works"
-            },
-            {
-                "name": "system: IPv4 Capable",
-                "slug": "system-ipv4-capable"
-            },
-            {
-                "name": "system: IPv4 RFC1918",
-                "slug": "system-ipv4-rfc1918"
-            },
-            {
-                "name": "system: IPv4 Stable 1d",
-                "slug": "system-ipv4-stable-1d"
-            }
-        ],
-        "total_uptime": 288274297,
-        "type": "Probe"
-    },
-    {
-        "address_v4": "195.2.236.210",
-        "address_v6": null,
-        "asn_v4": 44032,
-        "asn_v6": null,
-        "country_code": "UA",
-        "description": "Home-Fiber",
-        "first_connected": 1354748379,
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                30.3175,
-                50.1785
-            ]
-        },
-        "id": 4012,
-        "is_anchor": false,
-        "is_public": true,
-        "last_connected": 1696319858,
-        "prefix_v4": "195.2.236.0\/24",
-        "prefix_v6": null,
-        "status": {
-            "id": 1,
-            "name": "Connected",
-            "since": "2023-10-01T05:08:15Z"
-        },
-        "status_since": 1696136895,
+        "status_since": 1695240308,
         "tags": [
             {
                 "name": "Fibre",
@@ -1428,8 +924,24 @@
                 "slug": "ftth"
             },
             {
-                "name": "system: V2",
-                "slug": "system-v2"
+                "name": "system: V1",
+                "slug": "system-v1"
+            },
+            {
+                "name": "system: Resolves A Correctly",
+                "slug": "system-resolves-a-correctly"
+            },
+            {
+                "name": "system: Resolves AAAA Correctly",
+                "slug": "system-resolves-aaaa-correctly"
+            },
+            {
+                "name": "system: IPv4 Works",
+                "slug": "system-ipv4-works"
+            },
+            {
+                "name": "Native IPv4",
+                "slug": "native-ipv4"
             },
             {
                 "name": "system: IPv4 Capable",
@@ -1438,46 +950,634 @@
             {
                 "name": "system: IPv4 RFC1918",
                 "slug": "system-ipv4-rfc1918"
+            },
+            {
+                "name": "AT&T",
+                "slug": "att"
+            },
+            {
+                "name": "system: IPv4 Stable 30d",
+                "slug": "system-ipv4-stable-30d"
+            },
+            {
+                "name": "system: IPv4 Stable 1d",
+                "slug": "system-ipv4-stable-1d"
+            },
+            {
+                "name": "pi-hole",
+                "slug": "pi-hole"
             }
         ],
-        "total_uptime": 271372735,
+        "total_uptime": 345337631,
         "type": "Probe"
     },
     {
-        "address_v4": "37.57.123.245",
+        "address_v4": "69.244.99.119",
         "address_v6": null,
-        "asn_v4": 13188,
+        "asn_v4": 7922,
         "asn_v6": null,
-        "country_code": "UA",
-        "description": "",
-        "first_connected": 1359639895,
+        "country_code": "US",
+        "description": "Moss Mill",
+        "first_connected": 1311434913,
         "geometry": {
             "type": "Point",
             "coordinates": [
-                30.4695,
-                50.4215
+                -74.4315,
+                39.4885
             ]
         },
-        "id": 4049,
+        "id": 1123,
         "is_anchor": false,
         "is_public": true,
-        "last_connected": 1696319858,
-        "prefix_v4": "37.57.123.0\/24",
+        "last_connected": 1695736391,
+        "prefix_v4": "69.240.0.0\/12",
         "prefix_v6": null,
         "status": {
             "id": 1,
             "name": "Connected",
-            "since": "2023-09-23T16:30:17Z"
+            "since": "2023-09-14T04:40:21Z"
         },
-        "status_since": 1695486617,
+        "status_since": 1694666421,
+        "tags": [
+            {
+                "name": "Cable",
+                "slug": "cable"
+            },
+            {
+                "name": "Home",
+                "slug": "home"
+            },
+            {
+                "name": "NAT",
+                "slug": "nat"
+            },
+            {
+                "name": "Native IPv6",
+                "slug": "native-ipv6"
+            },
+            {
+                "name": "system: V1",
+                "slug": "system-v1"
+            },
+            {
+                "name": "system: Resolves A Correctly",
+                "slug": "system-resolves-a-correctly"
+            },
+            {
+                "name": "system: Resolves AAAA Correctly",
+                "slug": "system-resolves-aaaa-correctly"
+            },
+            {
+                "name": "system: IPv4 Works",
+                "slug": "system-ipv4-works"
+            },
+            {
+                "name": "Native IPv4",
+                "slug": "native-ipv4"
+            },
+            {
+                "name": "system: IPv4 Capable",
+                "slug": "system-ipv4-capable"
+            },
+            {
+                "name": "system: IPv4 Stable 30d",
+                "slug": "system-ipv4-stable-30d"
+            }
+        ],
+        "total_uptime": 363060229,
+        "type": "Probe"
+    },
+    {
+        "address_v4": "45.59.47.80",
+        "address_v6": "2600:2b00:8a41:18f9:220:4aff:fec7:b079",
+        "asn_v4": 6181,
+        "asn_v6": 6181,
+        "country_code": "US",
+        "description": "James' Altafiber",
+        "first_connected": 1329972895,
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -84.6115,
+                39.1005
+            ]
+        },
+        "id": 1127,
+        "is_anchor": false,
+        "is_public": true,
+        "last_connected": 1695736391,
+        "prefix_v4": "45.59.32.0\/20",
+        "prefix_v6": "2600:2b00::\/28",
+        "status": {
+            "id": 1,
+            "name": "Connected",
+            "since": "2023-09-20T05:08:58Z"
+        },
+        "status_since": 1695186538,
+        "tags": [
+            {
+                "name": "Fibre",
+                "slug": "fibre"
+            },
+            {
+                "name": "Home",
+                "slug": "home"
+            },
+            {
+                "name": "NAT",
+                "slug": "nat"
+            },
+            {
+                "name": "Native IPv6",
+                "slug": "native-ipv6"
+            },
+            {
+                "name": "dual-stack",
+                "slug": "dual-stack"
+            },
+            {
+                "name": "IPv4",
+                "slug": "ipv4"
+            },
+            {
+                "name": "IPv6",
+                "slug": "ipv6"
+            },
+            {
+                "name": "FTTH",
+                "slug": "ftth"
+            },
+            {
+                "name": "system: V1",
+                "slug": "system-v1"
+            },
+            {
+                "name": "system: Resolves A Correctly",
+                "slug": "system-resolves-a-correctly"
+            },
+            {
+                "name": "system: Resolves AAAA Correctly",
+                "slug": "system-resolves-aaaa-correctly"
+            },
+            {
+                "name": "system: IPv4 Works",
+                "slug": "system-ipv4-works"
+            },
+            {
+                "name": "system: IPv6 Works",
+                "slug": "system-ipv6-works"
+            },
+            {
+                "name": "Native IPv4",
+                "slug": "native-ipv4"
+            },
+            {
+                "name": "system: IPv4 Capable",
+                "slug": "system-ipv4-capable"
+            },
+            {
+                "name": "system: IPv6 Capable",
+                "slug": "system-ipv6-capable"
+            },
+            {
+                "name": "system: IPv4 RFC1918",
+                "slug": "system-ipv4-rfc1918"
+            },
+            {
+                "name": "system: IPv6 Stable 30d",
+                "slug": "system-ipv6-stable-30d"
+            },
+            {
+                "name": "system: IPv6 Stable 1d",
+                "slug": "system-ipv6-stable-1d"
+            },
+            {
+                "name": "system: IPv4 Stable 30d",
+                "slug": "system-ipv4-stable-30d"
+            },
+            {
+                "name": "system: IPv4 Stable 1d",
+                "slug": "system-ipv4-stable-1d"
+            }
+        ],
+        "total_uptime": 357019952,
+        "type": "Probe"
+    },
+    {
+        "address_v4": "71.224.46.8",
+        "address_v6": "2601:46:c802:5810:220:4aff:fec7:b0f4",
+        "asn_v4": 7922,
+        "asn_v6": 7922,
+        "country_code": "US",
+        "description": "JJMB (probev1)",
+        "first_connected": 1332615646,
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -75.4005,
+                40.2185
+            ]
+        },
+        "id": 1142,
+        "is_anchor": false,
+        "is_public": true,
+        "last_connected": 1695736391,
+        "prefix_v4": "71.224.0.0\/12",
+        "prefix_v6": "2601::\/20",
+        "status": {
+            "id": 1,
+            "name": "Connected",
+            "since": "2023-09-13T07:01:32Z"
+        },
+        "status_since": 1694588492,
+        "tags": [
+            {
+                "name": "Cable",
+                "slug": "cable"
+            },
+            {
+                "name": "Home",
+                "slug": "home"
+            },
+            {
+                "name": "NAT",
+                "slug": "nat"
+            },
+            {
+                "name": "Native IPv6",
+                "slug": "native-ipv6"
+            },
+            {
+                "name": "IPv4",
+                "slug": "ipv4"
+            },
+            {
+                "name": "IPv6",
+                "slug": "ipv6"
+            },
+            {
+                "name": "Comcast",
+                "slug": "comcast"
+            },
+            {
+                "name": "ISP",
+                "slug": "isp"
+            },
+            {
+                "name": "system: V1",
+                "slug": "system-v1"
+            },
+            {
+                "name": "system: Resolves A Correctly",
+                "slug": "system-resolves-a-correctly"
+            },
+            {
+                "name": "system: Resolves AAAA Correctly",
+                "slug": "system-resolves-aaaa-correctly"
+            },
+            {
+                "name": "system: IPv4 Works",
+                "slug": "system-ipv4-works"
+            },
+            {
+                "name": "system: IPv6 Works",
+                "slug": "system-ipv6-works"
+            },
+            {
+                "name": "Native IPv4",
+                "slug": "native-ipv4"
+            },
+            {
+                "name": "system: IPv4 Capable",
+                "slug": "system-ipv4-capable"
+            },
+            {
+                "name": "system: IPv6 Capable",
+                "slug": "system-ipv6-capable"
+            },
+            {
+                "name": "system: IPv4 RFC1918",
+                "slug": "system-ipv4-rfc1918"
+            },
+            {
+                "name": "system: IPv6 Stable 30d",
+                "slug": "system-ipv6-stable-30d"
+            },
+            {
+                "name": "system: IPv6 Stable 1d",
+                "slug": "system-ipv6-stable-1d"
+            },
+            {
+                "name": "system: IPv4 Stable 30d",
+                "slug": "system-ipv4-stable-30d"
+            },
+            {
+                "name": "system: IPv4 Stable 1d",
+                "slug": "system-ipv4-stable-1d"
+            }
+        ],
+        "total_uptime": 321297076,
+        "type": "Probe"
+    },
+    {
+        "address_v4": "73.251.198.1",
+        "address_v6": "2601:5cc:c700:8640:220:4aff:fec7:b106",
+        "asn_v4": 7922,
+        "asn_v6": 7922,
+        "country_code": "US",
+        "description": "Comcast Business Class 100\/10",
+        "first_connected": 1329856567,
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -77.5195,
+                38.9875
+            ]
+        },
+        "id": 1160,
+        "is_anchor": false,
+        "is_public": true,
+        "last_connected": 1695736391,
+        "prefix_v4": "73.0.0.0\/8",
+        "prefix_v6": "2601::\/20",
+        "status": {
+            "id": 1,
+            "name": "Connected",
+            "since": "2023-09-06T00:34:26Z"
+        },
+        "status_since": 1693960466,
+        "tags": [
+            {
+                "name": "Cable",
+                "slug": "cable"
+            },
+            {
+                "name": "Home",
+                "slug": "home"
+            },
+            {
+                "name": "NAT",
+                "slug": "nat"
+            },
+            {
+                "name": "IPv6",
+                "slug": "ipv6"
+            },
+            {
+                "name": "Comcast",
+                "slug": "comcast"
+            },
+            {
+                "name": "system: V1",
+                "slug": "system-v1"
+            },
+            {
+                "name": "system: Resolves A Correctly",
+                "slug": "system-resolves-a-correctly"
+            },
+            {
+                "name": "system: Resolves AAAA Correctly",
+                "slug": "system-resolves-aaaa-correctly"
+            },
+            {
+                "name": "system: IPv4 Works",
+                "slug": "system-ipv4-works"
+            },
+            {
+                "name": "system: IPv6 Works",
+                "slug": "system-ipv6-works"
+            },
+            {
+                "name": "system: IPv4 Capable",
+                "slug": "system-ipv4-capable"
+            },
+            {
+                "name": "system: IPv6 Capable",
+                "slug": "system-ipv6-capable"
+            },
+            {
+                "name": "system: IPv4 RFC1918",
+                "slug": "system-ipv4-rfc1918"
+            },
+            {
+                "name": "system: IPv6 Stable 30d",
+                "slug": "system-ipv6-stable-30d"
+            },
+            {
+                "name": "system: IPv4 Stable 30d",
+                "slug": "system-ipv4-stable-30d"
+            },
+            {
+                "name": "system: IPv4 Stable 90d",
+                "slug": "system-ipv4-stable-90d"
+            },
+            {
+                "name": "system: IPv6 Stable 90d",
+                "slug": "system-ipv6-stable-90d"
+            },
+            {
+                "name": "system: IPv4 Stable 1d",
+                "slug": "system-ipv4-stable-1d"
+            }
+        ],
+        "total_uptime": 355814266,
+        "type": "Probe"
+    },
+    {
+        "address_v4": "128.8.126.180",
+        "address_v6": null,
+        "asn_v4": 27,
+        "asn_v6": null,
+        "country_code": "US",
+        "description": "University of Maryland",
+        "first_connected": 1329145907,
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -76.9395,
+                38.9915
+            ]
+        },
+        "id": 1169,
+        "is_anchor": false,
+        "is_public": true,
+        "last_connected": 1695736391,
+        "prefix_v4": "128.8.0.0\/16",
+        "prefix_v6": null,
+        "status": {
+            "id": 1,
+            "name": "Connected",
+            "since": "2023-09-20T12:53:05Z"
+        },
+        "status_since": 1695214385,
+        "tags": [
+            {
+                "name": "Office",
+                "slug": "office"
+            },
+            {
+                "name": "NAT",
+                "slug": "nat"
+            },
+            {
+                "name": "system: V1",
+                "slug": "system-v1"
+            },
+            {
+                "name": "system: Resolves A Correctly",
+                "slug": "system-resolves-a-correctly"
+            },
+            {
+                "name": "system: Resolves AAAA Correctly",
+                "slug": "system-resolves-aaaa-correctly"
+            },
+            {
+                "name": "system: IPv4 Works",
+                "slug": "system-ipv4-works"
+            },
+            {
+                "name": "system: IPv4 Capable",
+                "slug": "system-ipv4-capable"
+            },
+            {
+                "name": "system: IPv4 Stable 30d",
+                "slug": "system-ipv4-stable-30d"
+            },
+            {
+                "name": "system: IPv4 Stable 90d",
+                "slug": "system-ipv4-stable-90d"
+            },
+            {
+                "name": "system: IPv4 Stable 1d",
+                "slug": "system-ipv4-stable-1d"
+            }
+        ],
+        "total_uptime": 361436953,
+        "type": "Probe"
+    },
+    {
+        "address_v4": "71.232.24.207",
+        "address_v6": "2601:19b:a00:6af:220:4aff:fec7:b0f5",
+        "asn_v4": 7922,
+        "asn_v6": 7922,
+        "country_code": "US",
+        "description": "",
+        "first_connected": 1372992187,
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -71.1185,
+                42.3795
+            ]
+        },
+        "id": 1185,
+        "is_anchor": false,
+        "is_public": true,
+        "last_connected": 1695736391,
+        "prefix_v4": "71.224.0.0\/12",
+        "prefix_v6": "2601::\/20",
+        "status": {
+            "id": 1,
+            "name": "Connected",
+            "since": "2023-09-19T12:12:36Z"
+        },
+        "status_since": 1695125556,
+        "tags": [
+            {
+                "name": "Home",
+                "slug": "home"
+            },
+            {
+                "name": "NAT",
+                "slug": "nat"
+            },
+            {
+                "name": "system: V1",
+                "slug": "system-v1"
+            },
+            {
+                "name": "system: Resolves A Correctly",
+                "slug": "system-resolves-a-correctly"
+            },
+            {
+                "name": "system: Resolves AAAA Correctly",
+                "slug": "system-resolves-aaaa-correctly"
+            },
+            {
+                "name": "system: IPv4 Works",
+                "slug": "system-ipv4-works"
+            },
+            {
+                "name": "system: IPv6 Works",
+                "slug": "system-ipv6-works"
+            },
+            {
+                "name": "system: IPv4 Capable",
+                "slug": "system-ipv4-capable"
+            },
+            {
+                "name": "system: IPv6 Capable",
+                "slug": "system-ipv6-capable"
+            },
+            {
+                "name": "system: IPv4 RFC1918",
+                "slug": "system-ipv4-rfc1918"
+            },
+            {
+                "name": "system: IPv6 Stable 1d",
+                "slug": "system-ipv6-stable-1d"
+            },
+            {
+                "name": "system: IPv4 Stable 30d",
+                "slug": "system-ipv4-stable-30d"
+            },
+            {
+                "name": "system: IPv4 Stable 90d",
+                "slug": "system-ipv4-stable-90d"
+            },
+            {
+                "name": "system: IPv4 Stable 1d",
+                "slug": "system-ipv4-stable-1d"
+            }
+        ],
+        "total_uptime": 272187339,
+        "type": "Probe"
+    },
+    {
+        "address_v4": "24.130.210.224",
+        "address_v6": null,
+        "asn_v4": 7922,
+        "asn_v6": null,
+        "country_code": "US",
+        "description": "SMPH-SantaClara-CA-USA",
+        "first_connected": 1359256077,
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -121.9485,
+                37.3515
+            ]
+        },
+        "id": 1188,
+        "is_anchor": false,
+        "is_public": true,
+        "last_connected": 1695736391,
+        "prefix_v4": "24.130.0.0\/15",
+        "prefix_v6": null,
+        "status": {
+            "id": 1,
+            "name": "Connected",
+            "since": "2023-09-19T17:02:42Z"
+        },
+        "status_since": 1695142962,
         "tags": [
             {
                 "name": "NAT",
                 "slug": "nat"
             },
             {
-                "name": "system: V2",
-                "slug": "system-v2"
+                "name": "system: V1",
+                "slug": "system-v1"
             },
             {
                 "name": "system: Resolves A Correctly",
@@ -1500,48 +1600,100 @@
                 "slug": "system-ipv4-rfc1918"
             },
             {
+                "name": "system: IPv4 Stable 30d",
+                "slug": "system-ipv4-stable-30d"
+            },
+            {
+                "name": "system: IPv4 Stable 90d",
+                "slug": "system-ipv4-stable-90d"
+            },
+            {
                 "name": "system: IPv4 Stable 1d",
                 "slug": "system-ipv4-stable-1d"
             }
         ],
-        "total_uptime": 319231439,
+        "total_uptime": 191883336,
         "type": "Probe"
     },
     {
-        "address_v4": "195.3.134.201",
-        "address_v6": "2a01:d0:8536:0:280:a3ff:fe91:4432",
-        "asn_v4": 29031,
-        "asn_v6": 29632,
-        "country_code": "UA",
-        "description": "ISP Kyivstar",
-        "first_connected": 1357667470,
+        "address_v4": "73.78.55.186",
+        "address_v6": "2601:281:200:40:220:4aff:fec7:bad4",
+        "asn_v4": 7922,
+        "asn_v6": 7922,
+        "country_code": "US",
+        "description": "Home",
+        "first_connected": 1321383448,
         "geometry": {
             "type": "Point",
             "coordinates": [
-                39.2175,
-                48.7375
+                -106.2985,
+                39.6395
             ]
         },
-        "id": 4100,
+        "id": 1194,
         "is_anchor": false,
         "is_public": true,
-        "last_connected": 1696319858,
-        "prefix_v4": "195.3.134.0\/23",
-        "prefix_v6": "2a01:d0:8000::\/33",
+        "last_connected": 1695736391,
+        "prefix_v4": "73.0.0.0\/8",
+        "prefix_v6": "2601::\/20",
         "status": {
             "id": 1,
             "name": "Connected",
-            "since": "2023-10-02T18:07:18Z"
+            "since": "2023-09-24T23:22:52Z"
         },
-        "status_since": 1696270038,
+        "status_since": 1695597772,
         "tags": [
             {
-                "name": "No NAT",
-                "slug": "no-nat"
+                "name": "Cable",
+                "slug": "cable"
             },
             {
-                "name": "system: V2",
-                "slug": "system-v2"
+                "name": "Home",
+                "slug": "home"
+            },
+            {
+                "name": "NAT",
+                "slug": "nat"
+            },
+            {
+                "name": "Native IPv6",
+                "slug": "native-ipv6"
+            },
+            {
+                "name": "IPv4",
+                "slug": "ipv4"
+            },
+            {
+                "name": "IPv6",
+                "slug": "ipv6"
+            },
+            {
+                "name": "Comcast",
+                "slug": "comcast"
+            },
+            {
+                "name": "system: V1",
+                "slug": "system-v1"
+            },
+            {
+                "name": "system: Resolves A Correctly",
+                "slug": "system-resolves-a-correctly"
+            },
+            {
+                "name": "system: Resolves AAAA Correctly",
+                "slug": "system-resolves-aaaa-correctly"
+            },
+            {
+                "name": "system: IPv4 Works",
+                "slug": "system-ipv4-works"
+            },
+            {
+                "name": "system: IPv6 Works",
+                "slug": "system-ipv6-works"
+            },
+            {
+                "name": "Native IPv4",
+                "slug": "native-ipv4"
             },
             {
                 "name": "system: IPv4 Capable",
@@ -1556,48 +1708,52 @@
                 "slug": "system-ipv4-rfc1918"
             }
         ],
-        "total_uptime": 314589307,
+        "total_uptime": 312564399,
         "type": "Probe"
     },
     {
-        "address_v4": "91.202.129.253",
+        "address_v4": "162.229.192.195",
         "address_v6": null,
-        "asn_v4": 13032,
+        "asn_v4": 7018,
         "asn_v6": null,
-        "country_code": "UA",
-        "description": "KNU ICC Probe",
-        "first_connected": 1355911906,
+        "country_code": "US",
+        "description": "menari.eu probe",
+        "first_connected": 1324425293,
         "geometry": {
             "type": "Point",
             "coordinates": [
-                30.4695,
-                50.3815
+                -118.1225,
+                34.0775
             ]
         },
-        "id": 4158,
+        "id": 2111,
         "is_anchor": false,
         "is_public": true,
-        "last_connected": 1696319858,
-        "prefix_v4": "91.202.128.0\/22",
+        "last_connected": 1695736391,
+        "prefix_v4": "162.224.0.0\/12",
         "prefix_v6": null,
         "status": {
             "id": 1,
             "name": "Connected",
-            "since": "2023-09-07T16:40:28Z"
+            "since": "2023-09-25T11:55:20Z"
         },
-        "status_since": 1694104828,
+        "status_since": 1695642920,
         "tags": [
             {
-                "name": "Datacentre",
-                "slug": "datacentre"
+                "name": "Fibre",
+                "slug": "fibre"
             },
             {
-                "name": "Academic",
-                "slug": "academic"
+                "name": "Home",
+                "slug": "home"
             },
             {
                 "name": "NAT",
                 "slug": "nat"
+            },
+            {
+                "name": "dual-stack",
+                "slug": "dual-stack"
             },
             {
                 "name": "system: V2",
@@ -1612,7 +1768,7 @@
                 "slug": "system-ipv4-rfc1918"
             }
         ],
-        "total_uptime": 311196607,
+        "total_uptime": 131068737,
         "type": "Probe"
     }
 ]

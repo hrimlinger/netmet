@@ -13,23 +13,26 @@ from common.default import (
     TP2_VPS_DATASET_CORRECTION,
     TP2_TARGETS_DATASET_CORRECTION,
     TP2_RESULTS_PATH,
+    TP2_DATASET_PATH,
 )
-from common.ripe.utils import print_traceroute
+from common.ripe.utils import print_traceroute, get_traceroute_countries
 from common.logger_config import logger
 
 
-def get_one_vp_one_target_random() -> tuple:
+def get_one_vp_one_target_random(
+    vp_input_path: Path, target_input_path: Path = TP2_TARGETS_DATASET
+) -> tuple:
     """return one vp from set of vp and one target from set of target"""
 
     # first we will load targets and vps from last exercise
     try:
         targets = load_json(TP2_TARGETS_DATASET)  # all UA connected servers
-        vps = load_json(TP2_VPS_DATASET)  # all RU connected servers
+        vps = load_json(vp_input_path)  # all RU connected servers
     except FileNotFoundError:
         logger.info(f"using vps and targets from the correction")
 
         targets = load_json(TP2_TARGETS_DATASET_CORRECTION)  # all UA connected servers
-        vps = load_json(TP2_VPS_DATASET_CORRECTION)  # all RU connected servers
+        vps = load_json(vp_input_path)  # all RU connected servers
 
     # we get one random target and one random vp,
     # so we do not overload one specific pair with our measurements
@@ -60,7 +63,7 @@ def exo1_get_a_measurement(measurement_id: int, output_file_path: Path) -> dict:
     # TODO: make an http request to RIPE API (using requests package)  #
     # to get measurement with measurement id : 38333397                #
     ####################################################################
-    measurement_description: dict = None
+    measurement_description: dict = requests.get(f"{base_url}/{measurement_id}/").json()
 
     if not measurement_description:
         logger.error("Measurement description is empty")
@@ -95,29 +98,29 @@ def exo2_get_a_measurement_result(measurement_id: int, output_file_path: Path) -
     ####################################################################
 
     # 1. get measurement description
-    response = None
+    response = requests.get(f"{base_url}/{measurement_id}/").json()
 
     if not response:
         logger.error("measurement description is empty")
         sys.exit(1)
 
     # 2. check measurement description to get measurement results url
-    result_url = None
+    result_url = response["result"]
 
     if not result_url:
         logger.error("result url empty")
         sys.exit(1)
 
     # 3. make the request to get measurement results
-    results = None
+    results = requests.get(result_url).json()
 
     if not result_url:
         logger.error("Measurement results empty")
         sys.exit(1)
 
-    # 4. just take the first result
     results = results[0]
 
+    # 4. just take the first result
     logger.info("Results:")
     for key, val in results.items():
         logger.info(f"{key} : {val}")
@@ -160,23 +163,27 @@ def exo3_get_all_vps() -> None:
     base_url = "https://atlas.ripe.net/api/v2/probes/"
 
     # 1. set parameters
-    params = None
+    params = {"country_code": "FR"}
 
     if not params:
         logger.error("you must set parameters")
         sys.exit(1)
     else:
         # 2. perform request to get all RIPE Atlas servers in Ukraine
-        response = None
+        response = requests.get(base_url, params=params).json()
 
         # 3. filter servers so they all :
         #   - have connected status (check the response)
         #   - have an IPv4 address
         filtered_vps = []
+        for vp in response["results"]:
+            if vp["status"]["name"] == "Connected":
+                if vp["address_v4"]:
+                    filtered_vps.append(vp)
 
         if filtered_vps:
             logger.info(f"Retrieved {len(filtered_vps)} connected servers from Ukraine")
-            dump_json(filtered_vps, TP2_VPS_DATASET_CORRECTION)
+            dump_json(filtered_vps, TP2_DATASET_PATH / "fr_vps.json")
         else:
             logger.error("VP dataset empty")
             sys.exit(1)
@@ -194,19 +201,23 @@ def exo4_get_all_targets() -> None:
     base_url = "https://atlas.ripe.net/api/v2/probes/"
 
     # 1. set parameters
-    params = None
+    params = {"country_code": "RU"}
 
     if not params:
         logger.error("you must set parameters")
         sys.exit(1)
     else:
         # 1. perform request to get all RIPE Atlas servers in Russia
-        response = None
+        response = requests.get(base_url, params=params).json()
 
         # 2. filter servers so they all :
         #   - have connected status (check the response)
         #   - have an IPv4 address
         filtered_targets = []
+        for target in response["results"]:
+            if target["status"]["name"] == "Connected":
+                if target["address_v4"]:
+                    filtered_targets.append(target)
 
         if filtered_targets:
             logger.info(
@@ -279,7 +290,7 @@ def exo5_perform_measurement(
 
     insert_json(measurement, output_file_path)
 
-    return measurement_id
+    return measurement
 
 
 if __name__ == "__main__":
@@ -291,27 +302,30 @@ if __name__ == "__main__":
         output_file_path=TP2_RESULTS_PATH / "results_exo1_correction.json",
     )
 
-    exo2_get_a_measurement_result(
-        measurement_id,
-        output_file_path=TP2_RESULTS_PATH / "results_exo2_correction.json",
-    )
+    # exo2_get_a_measurement_result(
+    #     measurement_id,
+    #     output_file_path=TP2_RESULTS_PATH / "results_exo2_correction.json",
+    # )
 
-    exo3_get_all_vps()
+    # exo3_get_all_vps()
 
-    exo4_get_all_targets()
+    # exo4_get_all_targets()
 
-    vp, target = get_one_vp_one_target_random()
-    port = 34543
-    protocol = "ICMP"
-    measurement_type = "traceroute"
-    exo5_perform_measurement(
-        target=target,
-        vp=vp,
-        port=port,
-        protocol=protocol,
-        measurement_type=measurement_type,
-        output_file_path=TP2_RESULTS_PATH / "results_exo5_correction.json",
-    )
+    # vp, _ = get_one_vp_one_target_random()
+
+    # target = {"address_v4": "131.107.1.200"}
+    # vp = []
+    # port = 34543
+    # protocol = "ICMP"
+    # measurement_type = "traceroute"
+    # exo5_perform_measurement(
+    #     target=target,
+    #     vp=vp,
+    #     port=port,
+    #     protocol=protocol,
+    #     measurement_type=measurement_type,
+    #     output_file_path=TP2_RESULTS_PATH / "results_exo5.json",
+    # )
 
     # On your own, make a measurement with the same target and same vp but:
     #   - change port number with ICMP
@@ -321,6 +335,8 @@ if __name__ == "__main__":
     measurement_ids = [60359913, 60359920, 60359932]
 
     for id in measurement_ids:
-        exo2_get_a_measurement_result(
+        traceroute = exo2_get_a_measurement_result(
             id, output_file_path=TP2_RESULTS_PATH / f"exo6_correction_{id}.json"
         )
+
+        get_traceroute_countries(traceroute)

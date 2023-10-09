@@ -29,7 +29,10 @@ def insert_json(data: dict, file_path: Path) -> None:
 
     if file_path.exists():
         with file_path.open("r") as f:
-            existing_data = json.load(f)
+            try:
+                existing_data = json.load(f)
+            except json.JSONDecodeError:
+                pass
 
     with file_path.open("w") as f:
         if type(data) == list:

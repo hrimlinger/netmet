@@ -14,7 +14,7 @@ from common.default import (
     TP2_TARGETS_DATASET_CORRECTION,
     TP2_RESULTS_PATH,
 )
-from common.ripe.utils import print_traceroute
+from common.ripe.utils import print_traceroute, get_traceroute_countries
 from common.logger_config import logger
 
 
@@ -293,41 +293,44 @@ def exo5_perform_measurement(
 if __name__ == "__main__":
     # comment methods you do not want to exec
     # (or uncomment otherwise)
-    measurement_id = 60335345
-    exo1_get_a_measurement(
-        measurement_id,
-        output_file_path=TP2_RESULTS_PATH / "results_exo1_correction.json",
-    )
+    # measurement_id = 60335345
+    # exo1_get_a_measurement(
+    #     measurement_id,
+    #     output_file_path=TP2_RESULTS_PATH / "results_exo1_correction.json",
+    # )
 
-    exo2_get_a_measurement_result(
-        measurement_id,
-        output_file_path=TP2_RESULTS_PATH / "results_exo2_correction.json",
-    )
+    # exo2_get_a_measurement_result(
+    #     measurement_id,
+    #     output_file_path=TP2_RESULTS_PATH / "results_exo2_correction.json",
+    # )
 
-    exo3_get_all_vps()
+    # exo3_get_all_vps()
 
-    exo4_get_all_targets()
+    # exo4_get_all_targets()
 
-    vp, target = get_one_vp_one_target_random()
-    port = 34543
-    protocol = "ICMP"
-    measurement_type = "traceroute"
-    exo5_perform_measurement(
-        target=target,
-        vp=vp,
-        port=port,
-        protocol=protocol,
-        measurement_type=measurement_type,
-        output_file_path=TP2_RESULTS_PATH / "results_exo5_correction.json",
-    )
+    # vp, target = get_one_vp_one_target_random()
+    # port = 34543
+    # protocol = "ICMP"
+    # measurement_type = "traceroute"
+    # exo5_perform_measurement(
+    #     target=target,
+    #     vp=vp,
+    #     port=port,
+    #     protocol=protocol,
+    #     measurement_type=measurement_type,
+    #     output_file_path=TP2_RESULTS_PATH / "results_exo5_correction.json",
+    # )
 
     # On your own, make a measurement with the same target and same vp but:
     #   - change port number with ICMP
     #   - make one measurement with UDP
     # analyze the results
 
-    measurement_ids = [60359913, 60359920, 60359932]
+    measurement_ids = [60359932, 60359920, 60359913]
+
     for id in measurement_ids:
-        exo2_get_a_measurement_result(
+        traceroute = exo2_get_a_measurement_result(
             id, output_file_path=TP2_RESULTS_PATH / f"exo6_correction_{id}.json"
         )
+
+        get_traceroute_countries(traceroute)
