@@ -8,6 +8,22 @@ from datetime import datetime
 from common.logger_config import logger
 
 
+def get_coordinates_from_addr(target_addr: str, targets: list) -> tuple:
+    """return coordinates based on target IP address"""
+    # get target geo
+    for target in targets:
+        if target_addr == target["address_v4"]:
+            return target["geometry"]["coordinates"]
+
+
+def get_coordinates_from_id(id: str, all_servers: list) -> tuple:
+    """return coordinates based on target IP address"""
+    # get target geo
+    for server in all_servers:
+        if id == server["id"]:
+            return server["geometry"]["coordinates"]
+
+
 def get_traceroute_countries(traceroute: list) -> None:
     """from a traceroute result, get countries"""
     parsed_traceroute = []

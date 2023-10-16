@@ -16,6 +16,11 @@ requests = "^2.17.0"
 ujson = "^5.8.0"
 python-dotenv="^0.20.0"
 numpy="^1.24.0"
+python-whois="^0.7.0"
+folium="^0.12.0"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.25.2"
 
 [build-system]
 requires = ["poetry-core"]

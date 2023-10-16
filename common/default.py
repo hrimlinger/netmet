@@ -45,3 +45,12 @@ TP3_DATASET_PATH: Path = TP3_PATH / "datasets"
 
 # results
 TP3_RESULTS_PATH: Path = TP3_PATH / "results"
+
+##############################################################################################
+# TP4                                                                                        #
+##############################################################################################
+TP4_PATH: Path = DEFAULT_PATH / "../TP4/"
+TP4_DATASET_PATH: Path = TP4_PATH / "datasets"
+
+# results
+TP4_RESULTS_PATH: Path = TP4_PATH / "results"
