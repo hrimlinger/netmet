@@ -216,17 +216,17 @@ def evaluate_geolocation(
 
 if __name__ == "__main__":
     # common to both methods
-    find_vps = False
+    find_vps = True
     measure = False
-    retrieve_results = True
+    retrieve_results = False
 
     # geolocation
-    geolocate_shortest_ping = True
-    geolocate_cbg = True
+    geolocate_shortest_ping = False
+    geolocate_cbg = False
 
     # validation
-    shortest_ping_validation = True
-    cbg_validation = True
+    shortest_ping_validation = False
+    cbg_validation = False
 
     # IP addresses to geolocate
     targets = [
@@ -239,46 +239,44 @@ if __name__ == "__main__":
     # STEP 1:
     # select all VPs in France
     if find_vps:
-        vps = get_servers_from_country("FR", TP4_DATASET_PATH / "vps_correction.json")
+        vps = get_servers_from_country("FR", TP4_DATASET_PATH / "vps.json")
 
     # STEP 2:
     # Ping each target from each VPs
     if measure:
-        vps = load_json(TP4_DATASET_PATH / "vps_correction.json")
+        vps = load_json(TP4_DATASET_PATH / "vps.json")
         perform_measurements(
             targets=targets,
             vps=vps,
-            out_file_path=TP4_RESULTS_PATH
-            / "ping_measurement_description_correction.json",
+            out_file_path=TP4_RESULTS_PATH / "ping_measurement_description.json",
         )
 
     # STEP 3:
     # retrieve results
     if retrieve_results:
         measurement_descriptions = load_json(
-            TP4_RESULTS_PATH / "ping_measurement_description_correction.json"
+            TP4_RESULTS_PATH / "ping_measurement_description.json"
         )
         vps_to_target_min_rtts = retrieve_geolocation_measurements(
             measurement_descriptions=measurement_descriptions,
-            out_path=TP4_DATASET_PATH / "vps_to_target_min_rtt_correction.json",
+            out_path=TP4_DATASET_PATH / "vps_to_target_min_rtt.json",
         )
 
     # STEP 4:
     # perform shortest ping geolocation
     if geolocate_shortest_ping:
         # load vps
-        vps = load_json(TP4_DATASET_PATH / "vps_correction.json")
+        vps = load_json(TP4_DATASET_PATH / "vps.json")
 
         # load min rtts
         vps_to_target_min_rtts = load_json(
-            TP4_RESULTS_PATH / "vps_to_target_min_rtt_correction.json"
+            TP4_RESULTS_PATH / "vps_to_target_min_rtt.json"
         )
 
         geolocation_per_target_shortest_ping = shortest_ping_geolocation(
             vps_to_target_min_rtts=vps_to_target_min_rtts,
             vps=vps,
-            output_path=TP4_RESULTS_PATH
-            / "target_geolocation_shortest_ping_correction.json",
+            output_path=TP4_RESULTS_PATH / "target_geolocation_shortest_ping.json",
         )
 
     # STEP 5:
@@ -286,13 +284,13 @@ if __name__ == "__main__":
     if geolocate_cbg:
         # load min rtts
         vps_to_target_min_rtts = load_json(
-            TP4_RESULTS_PATH / "vps_to_target_min_rtt_correction.json"
+            TP4_RESULTS_PATH / "vps_to_target_min_rtt.json"
         )
 
         geolocation_per_target_cbg = cbg_geolocation(
             vps_to_target_min_rtts=vps_to_target_min_rtts,
             vps=vps,
-            output_path=TP4_RESULTS_PATH / "target_geolocation_cbg_correction.json",
+            output_path=TP4_RESULTS_PATH / "target_geolocation_cbg.json",
         )
 
     # STEP 6:
@@ -303,14 +301,13 @@ if __name__ == "__main__":
 
     if shortest_ping_validation:
         geolocation_shortest_ping = load_json(
-            TP4_RESULTS_PATH / "target_geolocation_shortest_ping_correction.json"
+            TP4_RESULTS_PATH / "target_geolocation_shortest_ping.json"
         )
 
         geolocation_error_shortest_ping = evaluate_geolocation(
             geolocation_per_target=geolocation_shortest_ping,
             validation_dataset=validation_dataset,
-            output_path=TP4_RESULTS_PATH
-            / "geolocation_error_shortest_ping_correction.json",
+            output_path=TP4_RESULTS_PATH / "geolocation_error_shortest_ping.json",
         )
 
         logger.info(
@@ -318,13 +315,11 @@ if __name__ == "__main__":
         )
 
     if cbg_validation:
-        geolocation_cbg = load_json(
-            TP4_RESULTS_PATH / "target_geolocation_cbg_correction.json"
-        )
+        geolocation_cbg = load_json(TP4_RESULTS_PATH / "target_geolocation_cbg.json")
         geolocation_error_cbg = evaluate_geolocation(
             geolocation_per_target=geolocation_cbg,
             validation_dataset=validation_dataset,
-            output_path=TP4_RESULTS_PATH / "geolocation_error_cbg_correction.json",
+            output_path=TP4_RESULTS_PATH / "geolocation_error_cbg.json",
         )
 
         logger.info(
